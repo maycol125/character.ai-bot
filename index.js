@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Interaction, Collection, ActivityType } = require("discord.js")
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMessages] });
+const keep_alive = require('./keep_alive.js')
 const config = require("./config") // Specifies the config file
 const fs = require("fs");
 
